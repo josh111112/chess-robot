@@ -468,8 +468,6 @@ void loop() {
           gameOver();
         }
 
-        // TODO - check if removing the return fixes it
-        // im assuming that the return just makes the loop continue
         if (k == 0x10) {                          /* The flag turn must change to 0x08 */
           detectCycle();
           myMoves[0] = {'\0'};
